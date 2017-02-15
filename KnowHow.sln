@@ -3,8 +3,64 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{2A8B89A2-C7E3-4A09-B565-3FB8EA4E3370}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignPatterns", "DesignPatterns", "{D935A75B-0CD5-4202-BA40-E55D6335F3EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{5EC8CF0C-ED55-42A9-90D5-814E6C714869}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Searching", "Searching", "{E6E46637-A4D8-4591-A60B-3F7562E4DB7F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{706DA785-0A17-40E9-8529-3C80029F58B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concepts", "Concepts", "{CA32150C-C764-4C59-9DE1-7F92B9E90CD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolidPrinciples", "SolidPrinciples", "{7A7516EB-A13C-4B4E-8D36-895AD1832A2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "Algorithms\Sorting\BubbleSort\BubbleSort.csproj", "{70D6654E-7540-401F-81E4-A672718036CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Helpers", "_Helpers", "{515B77CC-2DA4-4614-BD24-33D73A60062F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeHelpers", "_Helpers\CodeHelpers\CodeHelpers.csproj", "{006A2099-C988-4DC5-93A0-E46DB18C5772}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Tests", "_Tests", "{B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort_Tests", "Algorithms\Sorting\BubbleSort_Tests\BubbleSort_Tests.csproj", "{A2753C75-898D-41E3-8A0C-74F84CC1668B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHelpers", "_Helpers\TestHelpers\TestHelpers.csproj", "{C928D7FD-8A36-4A59-9448-3381FF61F1F8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70D6654E-7540-401F-81E4-A672718036CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D6654E-7540-401F-81E4-A672718036CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D6654E-7540-401F-81E4-A672718036CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D6654E-7540-401F-81E4-A672718036CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{006A2099-C988-4DC5-93A0-E46DB18C5772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{006A2099-C988-4DC5-93A0-E46DB18C5772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{006A2099-C988-4DC5-93A0-E46DB18C5772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{006A2099-C988-4DC5-93A0-E46DB18C5772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2753C75-898D-41E3-8A0C-74F84CC1668B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2753C75-898D-41E3-8A0C-74F84CC1668B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2753C75-898D-41E3-8A0C-74F84CC1668B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2753C75-898D-41E3-8A0C-74F84CC1668B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C928D7FD-8A36-4A59-9448-3381FF61F1F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C928D7FD-8A36-4A59-9448-3381FF61F1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C928D7FD-8A36-4A59-9448-3381FF61F1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C928D7FD-8A36-4A59-9448-3381FF61F1F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E6E46637-A4D8-4591-A60B-3F7562E4DB7F} = {2A8B89A2-C7E3-4A09-B565-3FB8EA4E3370}
+		{706DA785-0A17-40E9-8529-3C80029F58B5} = {2A8B89A2-C7E3-4A09-B565-3FB8EA4E3370}
+		{70D6654E-7540-401F-81E4-A672718036CF} = {706DA785-0A17-40E9-8529-3C80029F58B5}
+		{006A2099-C988-4DC5-93A0-E46DB18C5772} = {515B77CC-2DA4-4614-BD24-33D73A60062F}
+		{A2753C75-898D-41E3-8A0C-74F84CC1668B} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
+		{C928D7FD-8A36-4A59-9448-3381FF61F1F8} = {515B77CC-2DA4-4614-BD24-33D73A60062F}
 	EndGlobalSection
 EndGlobal
