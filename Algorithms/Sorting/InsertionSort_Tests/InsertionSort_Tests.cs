@@ -20,7 +20,7 @@ namespace Algorithms.Sorting.InsertionSort.Tests
         public void Sort_UnsortedArray_Test()
         {
             //Assign
-            m_ArrayGenerator = new IntArrayGenerator(10);
+            m_ArrayGenerator = new IntArrayGenerator(100);
             var sortedArray = m_ArrayGenerator.GetSorted();
             var unsortedArray = m_ArrayGenerator.GetUnsorted();
 
@@ -39,7 +39,7 @@ namespace Algorithms.Sorting.InsertionSort.Tests
         public void Sort_ReversedArray_Test()
         {
             //Assign
-            m_ArrayGenerator = new IntArrayGenerator(10);
+            m_ArrayGenerator = new IntArrayGenerator(100);
             var sortedArray = m_ArrayGenerator.GetSorted();
             var reversedArray = m_ArrayGenerator.GetReversed();
 
