@@ -4,59 +4,87 @@ using System.IO;
 
 namespace CodeHelpers
 {
-    public static class Tracer
+    public class Tracer
     {
         //################################################################################
         #region Constants
 
         private const string c_LogFilePrefix = "Log";
-        private static string m_LogFilePath = string.Empty;
 
         #endregion
 
         //################################################################################
         #region Fields
 
-        private static readonly Stopwatch m_StopWatch = new Stopwatch();
+        private readonly string m_LogFilePath;
+        private readonly bool m_IsLogToFile;
+        private readonly OutputType m_OutputType;
+        private readonly Stopwatch m_StopWatch = new Stopwatch();
 
         #endregion
 
         //################################################################################
-        #region Static Implementation
+        #region Constructor
 
-        public static void ToOutput(string output, bool isLogToFile)
+        public Tracer(OutputType outputType, bool isLogToFile)
         {
-            Debug.WriteLine(output);
+            m_LogFilePath = CreateLogFile();
+            m_OutputType = outputType;
+            m_IsLogToFile = isLogToFile;
+        }
 
-            if (isLogToFile)
+        #endregion
+
+        //################################################################################
+        #region Public Implementation
+
+        public void WriteOutput(string output)
+        {
+            switch (m_OutputType)
             {
-                ToFile(output); 
+                case OutputType.NoneUI:
+                    NoUIOutput(output);
+                    break;
+
+                case OutputType.Debug:
+                    DebugOutput(output);
+                    break;
+
+                case OutputType.Console:
+                    ConsoleOutput(output);
+                    break;
             }
         }
 
-        public static void StartTimer()
+        public void StartTimer()
         {
             m_StopWatch.Start();
         }
 
-        public static string StopTimer()
+        public string StopTimer()
         {
             m_StopWatch.Stop();
             var elapsedTime = m_StopWatch.Elapsed;
             m_StopWatch.Reset();
 
-            return $"{elapsedTime.Milliseconds}";
+            return $"{elapsedTime}";
         }
 
-        public static void CurrentArray(int[] array, bool isLogToFile)
+        public void CurrentArray(int[] array)
         {
+            if (m_OutputType == OutputType.NoneUI && !m_IsLogToFile)
+            {
+                return;
+            }
+
             var arrayOutput = string.Empty;
             for (int j = 0; j < array.Length; j++)
             {
                 arrayOutput += $"{array[j]}-";
             }
 
-            ToOutput($"CURRENT ARRAY: {arrayOutput.Substring(0, arrayOutput.Length - 1)}", isLogToFile);
+            var output = $"CURRENT ARRAY: {arrayOutput.Substring(0, arrayOutput.Length - 1)}";
+            WriteOutput(output);
         }
 
         #endregion
@@ -64,14 +92,42 @@ namespace CodeHelpers
         //################################################################################
         #region Private Implementation
 
-        private static string GenerateLogFileName()
+        private void NoUIOutput(string output)
+        {
+            if (m_IsLogToFile)
+            {
+                OutputToLogFile(output);
+            }
+        }
+
+        private void DebugOutput(string output)
+        {
+            Debug.WriteLine(output);
+
+            if (m_IsLogToFile)
+            {
+                OutputToLogFile(output);
+            }
+        }
+
+        private void ConsoleOutput(string output)
+        {
+            Console.WriteLine(output);
+
+            if (m_IsLogToFile)
+            {
+                OutputToLogFile(output);
+            }
+        }
+
+        private string GenerateLogFileName()
         {
             var postfix = DateTime.UtcNow.ToString("yyyy.MM.dd_HH.mm.ss");
 
             return $"{c_LogFilePrefix}_{postfix}.txt";
         }
 
-        private static string CreateLogFile()
+        private string CreateLogFile()
         {
             //Generate a log filename
             var filename = GenerateLogFileName();
@@ -94,14 +150,13 @@ namespace CodeHelpers
             return filePath;
         }
 
-        private static void ToFile(string output)
+        private void OutputToLogFile(string output)
         {
-            //if (string.IsNullOrEmpty(m_LogFilePath))
-            //{
-            //    m_LogFilePath = CreateLogFile();
-            //}
-
-            //TODO: Write output to a log file.
+            using (var stream = File.AppendText(m_LogFilePath))
+            {
+                var textWriter = TextWriter.Synchronized(stream);
+                textWriter.WriteLine(output);
+            }
         }
 
         #endregion

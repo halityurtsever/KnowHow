@@ -33,6 +33,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "Algorithms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort_Tests", "Algorithms\Sorting\InsertionSort_Tests\InsertionSort_Tests.csproj", "{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Workers", "_Workers", "{776B9A6B-2769-414A-9D60-9402B7DF11D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Sorting.InsertionSort.Worker", "_Workers\Algorithms.Sorting.InsertionSort.Worker\Algorithms.Sorting.InsertionSort.Worker.csproj", "{3B186B75-6453-4D7E-830A-A50315A43261}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,10 @@ Global
 		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B186B75-6453-4D7E-830A-A50315A43261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B186B75-6453-4D7E-830A-A50315A43261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B186B75-6453-4D7E-830A-A50315A43261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B186B75-6453-4D7E-830A-A50315A43261}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,5 +84,6 @@ Global
 		{C928D7FD-8A36-4A59-9448-3381FF61F1F8} = {515B77CC-2DA4-4614-BD24-33D73A60062F}
 		{36EED4E5-42E0-498A-A130-281DD54731DC} = {706DA785-0A17-40E9-8529-3C80029F58B5}
 		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
+		{3B186B75-6453-4D7E-830A-A50315A43261} = {776B9A6B-2769-414A-9D60-9402B7DF11D6}
 	EndGlobalSection
 EndGlobal

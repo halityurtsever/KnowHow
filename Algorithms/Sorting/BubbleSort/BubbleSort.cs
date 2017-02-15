@@ -1,7 +1,7 @@
 ﻿
 using CodeHelpers;
 
-namespace BubbleSort
+namespace Algorithms.Sorting.BubbleSort
 {
     /** Bubble sort algorithm
      * Swaps [i] and [i + 1] if [i] smaller then [i + 1] until m_Array ordered
@@ -68,10 +68,11 @@ namespace BubbleSort
             }
         }
 
-        public void TraceSort()
+        public void TraceSort(Tracer tracer)
         {
             bool isSwapped = true;
 #if TRACE
+            tracer.CurrentArray(m_Array);
             var swapCount = 0;
 #endif
             while (isSwapped)
@@ -87,20 +88,14 @@ namespace BubbleSort
                         m_Array[i] = temp;
                         isSwapped = true;
 #if TRACE
-                        //Current m_Array
-                        var arrayOutput = string.Empty;
-                        for (int j = 0; j < m_Array.Length; j++)
-                        {
-                            arrayOutput += $"{m_Array[j]}-";
-                        }
-                        Tracer.ToFile($"CURRENT ARRAY: {arrayOutput.Substring(0, arrayOutput.Length - 1)}");
+                        tracer.CurrentArray(m_Array);
                         swapCount++;
 #endif
                     }
                 }
             }
 #if TRACE
-            Tracer.ToOutput($"TOTAL SWAP COUNT: {swapCount}");
+            tracer.WriteOutput($"TOTAL SWAP COUNT: {swapCount}");
 #endif
         }
 

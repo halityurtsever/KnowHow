@@ -1,6 +1,6 @@
 ﻿using CodeHelpers;
 
-namespace InsertionSort
+namespace Algorithms.Sorting.InsertionSort
 {
     /** Insertion sort algorithm
      * Compares xth element of an array with previous indexes until find a smaller one
@@ -72,10 +72,10 @@ namespace InsertionSort
             }
         }
 
-        public void TraceSort()
+        public void TraceSort(Tracer tracer)
         {
 #if TRACE
-            Tracer.ToOutput("INSERTION SORT", false);
+            tracer.CurrentArray(m_Array);
             var insertCount = 0;
 #endif
             for (int i = 1; i < m_Array.Length; i++)
@@ -92,13 +92,13 @@ namespace InsertionSort
                     index--;
 #if TRACE
                     //Current status of the array
-                    Tracer.CurrentArray(m_Array, false);
+                    tracer.CurrentArray(m_Array);
                     insertCount++;
 #endif
                 }
             }
 #if TRACE
-            Tracer.ToOutput($"TOTAL INSERT COUNT: {insertCount}", false);
+            tracer.WriteOutput($"TOTAL INSERT COUNT: {insertCount}");
 #endif
         }
 

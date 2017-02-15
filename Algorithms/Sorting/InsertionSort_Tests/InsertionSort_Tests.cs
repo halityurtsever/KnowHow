@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestHelpers;
 
-namespace InsertionSort.Tests
+namespace Algorithms.Sorting.InsertionSort.Tests
 {
     [TestClass()]
     public class InsertionSort_Tests

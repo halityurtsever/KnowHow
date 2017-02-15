@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestHelpers;
 
-namespace BubbleSort.Tests
+namespace Algorithms.Sorting.BubbleSort.Tests
 {
     [TestClass()]
     public class BubbleSort_Tests
