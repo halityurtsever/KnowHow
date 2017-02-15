@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort_Tests", "Algorit
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHelpers", "_Helpers\TestHelpers\TestHelpers.csproj", "{C928D7FD-8A36-4A59-9448-3381FF61F1F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort", "Algorithms\Sorting\InsertionSort\InsertionSort.csproj", "{36EED4E5-42E0-498A-A130-281DD54731DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertionSort_Tests", "Algorithms\Sorting\InsertionSort_Tests\InsertionSort_Tests.csproj", "{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{C928D7FD-8A36-4A59-9448-3381FF61F1F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C928D7FD-8A36-4A59-9448-3381FF61F1F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C928D7FD-8A36-4A59-9448-3381FF61F1F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EED4E5-42E0-498A-A130-281DD54731DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EED4E5-42E0-498A-A130-281DD54731DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EED4E5-42E0-498A-A130-281DD54731DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EED4E5-42E0-498A-A130-281DD54731DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,5 +74,7 @@ Global
 		{006A2099-C988-4DC5-93A0-E46DB18C5772} = {515B77CC-2DA4-4614-BD24-33D73A60062F}
 		{A2753C75-898D-41E3-8A0C-74F84CC1668B} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
 		{C928D7FD-8A36-4A59-9448-3381FF61F1F8} = {515B77CC-2DA4-4614-BD24-33D73A60062F}
+		{36EED4E5-42E0-498A-A130-281DD54731DC} = {706DA785-0A17-40E9-8529-3C80029F58B5}
+		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
 	EndGlobalSection
 EndGlobal

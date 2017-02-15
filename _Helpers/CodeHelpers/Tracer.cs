@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Text;
 
 namespace CodeHelpers
 {
@@ -26,18 +24,14 @@ namespace CodeHelpers
         //################################################################################
         #region Static Implementation
 
-        public static void ToOutput(string output)
+        public static void ToOutput(string output, bool isLogToFile)
         {
             Debug.WriteLine(output);
-        }
 
-        public static void ToFile(string output)
-        {
-            if (string.IsNullOrEmpty(m_LogFilePath))
+            if (isLogToFile)
             {
-                m_LogFilePath = CreateLogFile();
+                ToFile(output); 
             }
-
         }
 
         public static void StartTimer()
@@ -52,6 +46,17 @@ namespace CodeHelpers
             m_StopWatch.Reset();
 
             return $"{elapsedTime.Milliseconds}";
+        }
+
+        public static void CurrentArray(int[] array, bool isLogToFile)
+        {
+            var arrayOutput = string.Empty;
+            for (int j = 0; j < array.Length; j++)
+            {
+                arrayOutput += $"{array[j]}-";
+            }
+
+            ToOutput($"CURRENT ARRAY: {arrayOutput.Substring(0, arrayOutput.Length - 1)}", isLogToFile);
         }
 
         #endregion
@@ -87,6 +92,16 @@ namespace CodeHelpers
             file.Close();
 
             return filePath;
+        }
+
+        private static void ToFile(string output)
+        {
+            //if (string.IsNullOrEmpty(m_LogFilePath))
+            //{
+            //    m_LogFilePath = CreateLogFile();
+            //}
+
+            //TODO: Write output to a log file.
         }
 
         #endregion
