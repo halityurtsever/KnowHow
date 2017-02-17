@@ -20,6 +20,12 @@ namespace Algorithms.Sorting.BubbleSort
      *                                 ^   ^
      *                                 swap 9 and 2
      * and goes on...
+     * 
+     * Worst case performance: O(n2)
+     * Best case performance: O(n)
+     * Average performance: O(n2)
+     * Worst case space complexity: O(1) auxiliary
+     * 
      */
 
     public class BubbleSort
