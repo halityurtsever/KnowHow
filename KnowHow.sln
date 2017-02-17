@@ -37,6 +37,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Workers", "_Workers", "{77
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Sorting.InsertionSort.Worker", "_Workers\Algorithms.Sorting.InsertionSort.Worker\Algorithms.Sorting.InsertionSort.Worker.csproj", "{3B186B75-6453-4D7E-830A-A50315A43261}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "Algorithms\Sorting\SelectionSort\SelectionSort.csproj", "{46DF672B-2658-444C-8674-814E250A935F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort_Tests", "Algorithms\Sorting\SelectionSort_Tests\SelectionSort_Tests.csproj", "{7A98B049-525E-4DFC-93ED-A1223870B078}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +75,14 @@ Global
 		{3B186B75-6453-4D7E-830A-A50315A43261}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B186B75-6453-4D7E-830A-A50315A43261}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B186B75-6453-4D7E-830A-A50315A43261}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46DF672B-2658-444C-8674-814E250A935F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46DF672B-2658-444C-8674-814E250A935F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46DF672B-2658-444C-8674-814E250A935F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46DF672B-2658-444C-8674-814E250A935F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A98B049-525E-4DFC-93ED-A1223870B078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A98B049-525E-4DFC-93ED-A1223870B078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A98B049-525E-4DFC-93ED-A1223870B078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A98B049-525E-4DFC-93ED-A1223870B078}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +97,7 @@ Global
 		{36EED4E5-42E0-498A-A130-281DD54731DC} = {706DA785-0A17-40E9-8529-3C80029F58B5}
 		{0EE410BE-FF8D-45DB-A977-6DB359E9DCAD} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
 		{3B186B75-6453-4D7E-830A-A50315A43261} = {776B9A6B-2769-414A-9D60-9402B7DF11D6}
+		{46DF672B-2658-444C-8674-814E250A935F} = {706DA785-0A17-40E9-8529-3C80029F58B5}
+		{7A98B049-525E-4DFC-93ED-A1223870B078} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
 	EndGlobalSection
 EndGlobal
