@@ -50,10 +50,6 @@ namespace Algorithms.Sorting.BubbleSort
         //################################################################################
         #region Public Implementation
 
-        /// <summary>
-        /// Method takes an m_Array as a parameter and sort it by using Bubble Sort algorithm.
-        /// Because of int[] is a reference type object, no need to return it.
-        /// </summary>
         public void Sort()
         {
             bool isSwapped = true;

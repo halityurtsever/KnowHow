@@ -56,9 +56,6 @@ namespace Algorithms.Sorting.SelectionSort
         //################################################################################
         #region Public Implementation
 
-        /// <summary>
-        /// 
-        /// </summary>
         public void Sort()
         {
             int minIndex = 0;

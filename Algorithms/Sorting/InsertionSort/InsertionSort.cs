@@ -54,10 +54,6 @@ namespace Algorithms.Sorting.InsertionSort
         //################################################################################
         #region Public Implementation
 
-        /// <summary>
-        /// Iterates an array and inserts smaller values until it founds a bigger one
-        /// then shifts all biggers to right
-        /// </summary>
         public void Sort()
         {
             for (int i = 1; i < m_Array.Length; i++)
