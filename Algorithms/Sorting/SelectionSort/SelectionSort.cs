@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CodeHelpers;
+﻿using CodeHelpers;
 
 namespace Algorithms.Sorting.SelectionSort
 {
@@ -24,6 +19,12 @@ namespace Algorithms.Sorting.SelectionSort
      *                                   ^   ^
      *                                   swap 9 and 2
      * and goes on...
+     * 
+     * Worst case performance: O(n2)
+     * Best case performance: O(n)
+     * Average performance: O(n2)
+     * Worst case space complexity: O(n) total, O(1) auxiliary
+     * 
      */
 
     public class SelectionSort
