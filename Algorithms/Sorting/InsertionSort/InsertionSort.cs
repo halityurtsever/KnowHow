@@ -25,6 +25,11 @@ namespace Algorithms.Sorting.InsertionSort
      *                       insert 2 before 3, shift other elements to right
      * and goes on...
      * 
+     * Worst case performance: O(n2) comparisons, swaps
+     * Best case performance: O(n) comparisons, O(1) swaps
+     * Average performance: O(n2) comparisons, swaps
+     * Worst case space complexity: O(n) total, O(1) auxiliary
+     * 
      */
 
     public class InsertionSort
