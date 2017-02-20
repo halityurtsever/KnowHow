@@ -9,15 +9,15 @@ namespace Algorithms.Sorting.BubbleSort
      * Initial m_Array    -> 7 - 3 - 9 - 5 - 2 - 8 - 6 - 1 - 4
      * 
      * Pass 1           -> 3 - 7 - 9 - 5 - 2 - 8 - 6 - 1 - 4
-     *                     ^   ^
+     *                     ^---^
      *                     swap 7 and 3
      * 
      * Pass 2           -> 3 - 7 - 5 - 9 - 2 - 8 - 6 - 1 - 4
-     *                             ^   ^
+     *                             ^---^
      *                             swap 9 and 5
      * 
      * Pass 3           -> 3 - 7 - 5 - 2 - 9 - 8 - 6 - 1 - 4
-     *                                 ^   ^
+     *                                 ^---^
      *                                 swap 9 and 2
      * and goes on...
      * 
