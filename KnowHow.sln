@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort", "Algorithms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectionSort_Tests", "Algorithms\Sorting\SelectionSort_Tests\SelectionSort_Tests.csproj", "{7A98B049-525E-4DFC-93ED-A1223870B078}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "Algorithms\Sorting\MergeSort\MergeSort.csproj", "{26549363-F304-460E-94FF-3E3BB7D1E6AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort_Tests", "Algorithms\Sorting\MergeSort_Tests\MergeSort_Tests.csproj", "{577331E1-269E-42C0-9CC7-1EC33A9CA638}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -83,6 +87,14 @@ Global
 		{7A98B049-525E-4DFC-93ED-A1223870B078}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A98B049-525E-4DFC-93ED-A1223870B078}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A98B049-525E-4DFC-93ED-A1223870B078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26549363-F304-460E-94FF-3E3BB7D1E6AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26549363-F304-460E-94FF-3E3BB7D1E6AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26549363-F304-460E-94FF-3E3BB7D1E6AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26549363-F304-460E-94FF-3E3BB7D1E6AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{577331E1-269E-42C0-9CC7-1EC33A9CA638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577331E1-269E-42C0-9CC7-1EC33A9CA638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577331E1-269E-42C0-9CC7-1EC33A9CA638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577331E1-269E-42C0-9CC7-1EC33A9CA638}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,5 +111,7 @@ Global
 		{3B186B75-6453-4D7E-830A-A50315A43261} = {776B9A6B-2769-414A-9D60-9402B7DF11D6}
 		{46DF672B-2658-444C-8674-814E250A935F} = {706DA785-0A17-40E9-8529-3C80029F58B5}
 		{7A98B049-525E-4DFC-93ED-A1223870B078} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
+		{26549363-F304-460E-94FF-3E3BB7D1E6AE} = {706DA785-0A17-40E9-8529-3C80029F58B5}
+		{577331E1-269E-42C0-9CC7-1EC33A9CA638} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
 	EndGlobalSection
 EndGlobal
