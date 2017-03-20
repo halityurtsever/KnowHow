@@ -34,10 +34,10 @@ namespace Algorithms.Sorting.MergeSort
 
         public void Sort()
         {
-            var startIndex = 0;
-            var endIndex = m_Array.Length - 1;
+            var left = 0;
+            var right = m_Array.Length - 1;
 
-            Sort(m_Array, startIndex, endIndex);
+            Sort(m_Array, left, right);
         }
 
         public void TraceSort(Tracer tracer)
@@ -50,12 +50,12 @@ namespace Algorithms.Sorting.MergeSort
         //################################################################################
         #region Private Implementation
 
-        private void Sort(int[] array, int startIndex, int endIndex)
+        private void Sort(int[] array, int left, int right)
         {
-            var difference = endIndex - startIndex;
-            var middleIndex = (endIndex + startIndex)/2;
+            var difference = right - left;
+            var middle = (right + left)/2;
 
-            if (startIndex == endIndex)
+            if (left == right)
             {
                 return;
             }
@@ -63,67 +63,68 @@ namespace Algorithms.Sorting.MergeSort
             if (difference >= 1)
             {
                 //sort left part
-                Sort(array, startIndex, middleIndex);
+                Sort(array, left, middle);
 
                 //sort right part
-                Sort(array, middleIndex + 1, endIndex);
+                Sort(array, middle + 1, right);
             }
 
-            Merge(array, startIndex, middleIndex, endIndex);
+            Merge(array, left, middle, right);
         }
 
-        private void Merge(int[] array, int startIndex, int middleIndex, int endIndex)
+        private void Merge(int[] array, int left, int middle, int right)
         {
             //create temp array
-            int[] tempArray = new int[endIndex - startIndex + 1];
+            int[] tempArray = new int[right - left + 1];
 
-            int leftIndex = startIndex;
-            int rightIndex = middleIndex + 1;
+            int leftArrayIndex = left;
+            int rightArrayIndex = middle + 1;
             int tempIndex = 0;
 
             while (tempIndex < tempArray.Length)
             {
-                if (leftIndex > startIndex || rightIndex > middleIndex + 1)
+                //left or right array reached to end of the array
+                if (leftArrayIndex > middle || rightArrayIndex > right)
                 {
                     break;
                 }
 
-                if (array[leftIndex] > array[rightIndex])
+                if (array[leftArrayIndex] > array[rightArrayIndex])
                 {
-                    tempArray[tempIndex] = array[rightIndex];
-                    rightIndex++;
+                    tempArray[tempIndex] = array[rightArrayIndex];
+                    rightArrayIndex++;
                 }
                 else
                 {
-                    tempArray[tempIndex] = array[leftIndex];
-                    leftIndex++;
+                    tempArray[tempIndex] = array[leftArrayIndex];
+                    leftArrayIndex++;
                 }
 
                 tempIndex++;
             }
 
             //if any index left from left side
-            if (leftIndex <= startIndex)
+            if (leftArrayIndex <= middle)
             {
-                for (int i = leftIndex; i <= startIndex; i++)
+                for (int i = leftArrayIndex; i <= middle; i++)
                 {
-                    tempArray[tempIndex] = array[leftIndex];
+                    tempArray[tempIndex] = array[i];
                     tempIndex++;
                 }
             }
 
             //if any index left from right side
-            if (rightIndex <= middleIndex + 1)
+            if (rightArrayIndex <= right)
             {
-                for (int i = rightIndex; i <= middleIndex + 1; i++)
+                for (int i = rightArrayIndex; i <= right; i++)
                 {
-                    tempArray[tempIndex] = array[rightIndex];
+                    tempArray[tempIndex] = array[i];
                     tempIndex++;
                 }
             }
 
             //copy temp array to real array
-            Array.Copy(tempArray, 0, array, startIndex, tempArray.Length);
+            Array.Copy(tempArray, 0, array, left, tempArray.Length);
         }
 
         #endregion
