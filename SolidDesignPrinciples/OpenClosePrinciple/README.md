@@ -1,6 +1,8 @@
-﻿### Motivation
+﻿Reference: http://www.oodesign.com/open-close-principle.html
 
-http://www.oodesign.com/open-close-principle.html
+Class Diagram: https://www.draw.io/#Hhalityurtsever%2FKnowHow%2Fmaster%2FSolidDesignPrinciples%2FOpenClosePrinciple%2FOpenClosePrinciple.xml
+
+### Motivation
 
 A clever application design and the code writing part should take care of the frequent changes that are done during the development and the maintaining phase of an application. Usually, many changes are involved when a new functionality is added to an application. Those changes in the existing code should be minimized, since it's assumed that the existing code is already unit tested and changes in already written code might affect the existing functionality in an unwanted manner.
 
