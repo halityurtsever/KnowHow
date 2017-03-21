@@ -40,12 +40,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BadExample\ClientProject.cs" />
+    <Compile Include="BadExample\ServerProject.cs" />
+    <Compile Include="BadExample\SonarAnalyzer.cs" />
+    <Compile Include="BadExample\SonarProject.cs" />
+    <Compile Include="GoodExample\ClientProject.cs" />
+    <Compile Include="GoodExample\ServerProject.cs" />
+    <Compile Include="GoodExample\SonarAnalyzer.cs" />
+    <Compile Include="GoodExample\SonarProject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="BadExample\" />
-    <Folder Include="GoodExample\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
