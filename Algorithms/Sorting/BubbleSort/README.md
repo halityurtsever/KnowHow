@@ -18,7 +18,9 @@ Pass 3           -> 3 - 7 - 5 - 2 - 9 - 8 - 6 - 1 - 4
 and goes on...
 
 Worst case performance: O(n2)
-Best case performance: O(n)
-Average performance: O(n2)
-Worst case space complexity: O(1) auxiliary
 
+Best case performance: O(n)
+
+Average performance: O(n2)
+
+Worst case space complexity: O(1) auxiliary
