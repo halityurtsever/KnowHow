@@ -1,6 +1,4 @@
-﻿Reference: http://www.oodesign.com/open-close-principle.html
-
-Class Diagram: https://www.draw.io/#Hhalityurtsever%2FKnowHow%2Fmaster%2FSolidDesignPrinciples%2FOpenClosePrinciple%2FOpenClosePrinciple.xml
+Reference: http://www.oodesign.com/open-close-principle.html
 
 ### Motivation
 
