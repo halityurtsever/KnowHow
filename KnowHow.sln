@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{2A8B89A2-C7E3-4A09-B565-3FB8EA4E3370}"
 EndProject
@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sorting", "Sorting", "{706D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Concepts", "Concepts", "{CA32150C-C764-4C59-9DE1-7F92B9E90CD1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolidPrinciples", "SolidPrinciples", "{7A7516EB-A13C-4B4E-8D36-895AD1832A2C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolidDesignPrinciples", "SolidDesignPrinciples", "{7A7516EB-A13C-4B4E-8D36-895AD1832A2C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSort", "Algorithms\Sorting\BubbleSort\BubbleSort.csproj", "{70D6654E-7540-401F-81E4-A672718036CF}"
 EndProject
@@ -44,6 +44,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort", "Algorithms\Sorting\MergeSort\MergeSort.csproj", "{26549363-F304-460E-94FF-3E3BB7D1E6AE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort_Tests", "Algorithms\Sorting\MergeSort_Tests\MergeSort_Tests.csproj", "{577331E1-269E-42C0-9CC7-1EC33A9CA638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosePrinciple", "SolidDesignPrinciples\OpenClosePrinciple\OpenClosePrinciple.csproj", "{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -95,6 +97,10 @@ Global
 		{577331E1-269E-42C0-9CC7-1EC33A9CA638}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{577331E1-269E-42C0-9CC7-1EC33A9CA638}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{577331E1-269E-42C0-9CC7-1EC33A9CA638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,5 +119,6 @@ Global
 		{7A98B049-525E-4DFC-93ED-A1223870B078} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
 		{26549363-F304-460E-94FF-3E3BB7D1E6AE} = {706DA785-0A17-40E9-8529-3C80029F58B5}
 		{577331E1-269E-42C0-9CC7-1EC33A9CA638} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
+		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
 	EndGlobalSection
 EndGlobal
