@@ -1,4 +1,4 @@
-﻿Reference: http://www.oodesign.com/open-close-principle.html
+Reference: http://www.oodesign.com/open-close-principle.html
 
 ### Motivation
 
