@@ -1,5 +1,3 @@
-Reference: http://www.oodesign.com/open-close-principle.html
-
 ### Motivation
 
 A clever application design and the code writing part should take care of the frequent changes that are done during the development and the maintaining phase of an application. Usually, many changes are involved when a new functionality is added to an application. Those changes in the existing code should be minimized, since it's assumed that the existing code is already unit tested and changes in already written code might affect the existing functionality in an unwanted manner.
@@ -9,3 +7,5 @@ The Open Close Principle states that the design and writing of the code should b
 ### Intent
 
 Software entities like classes, modules and functions should be open for extension but closed for modifications.
+
+Reference: http://www.oodesign.com/open-close-principle.html
