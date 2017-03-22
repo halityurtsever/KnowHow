@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeSort_Tests", "Algorith
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenClosePrinciple", "SolidDesignPrinciples\OpenClosePrinciple\OpenClosePrinciple.csproj", "{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversionPrinciple", "SolidDesignPrinciples\DependencyInversionPrinciple\DependencyInversionPrinciple.csproj", "{3A014DB0-1A89-40CA-B5C5-8D4E59B60A1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -101,6 +103,10 @@ Global
 		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A014DB0-1A89-40CA-B5C5-8D4E59B60A1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A014DB0-1A89-40CA-B5C5-8D4E59B60A1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A014DB0-1A89-40CA-B5C5-8D4E59B60A1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A014DB0-1A89-40CA-B5C5-8D4E59B60A1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -120,5 +126,6 @@ Global
 		{26549363-F304-460E-94FF-3E3BB7D1E6AE} = {706DA785-0A17-40E9-8529-3C80029F58B5}
 		{577331E1-269E-42C0-9CC7-1EC33A9CA638} = {B2DEEE38-630A-4870-9D8F-09DEABCA1DDA}
 		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
+		{3A014DB0-1A89-40CA-B5C5-8D4E59B60A1A} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
 	EndGlobalSection
 EndGlobal
