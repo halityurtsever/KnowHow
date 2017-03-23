@@ -11,17 +11,12 @@ namespace SolidDesignPrinciples.InterfaceSegregationPrinciple.GoodExample
             m_ProjectList.Add(project);
         }
 
-        internal void ExecuteAnalyzer()
-        {
-
-        }
-
-        private void StartAnalyzer(IAnalyzable project)
+        internal void StartAnalyzer(IAnalyzable project)
         {
             project.AnalyzeProject();
         }
 
-        private void StartTestCoverage(ITestable project)
+        internal void StartTestCoverage(ITestable project)
         {
             project.RunTestCoverage();
         }
