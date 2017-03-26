@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{2A8B89A2-C7E3-4A09-B565-3FB8EA4E3370}"
 EndProject
@@ -50,6 +50,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyInversionPrinciple", "SolidDesignPrinciples\DependencyInversionPrinciple\DependencyInversionPrinciple.csproj", "{3A014DB0-1A89-40CA-B5C5-8D4E59B60A1A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceSegregationPrinciple", "SolidDesignPrinciples\InterfaceSegregationPrinciple\InterfaceSegregationPrinciple.csproj", "{B4272037-13D1-43E9-AE8B-E74F72131403}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrinciple", "SolidDesignPrinciples\SingleResponsibilityPrinciple\SingleResponsibilityPrinciple.csproj", "{12A127AD-268E-407A-B550-1E3FF745D838}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -113,6 +115,10 @@ Global
 		{B4272037-13D1-43E9-AE8B-E74F72131403}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4272037-13D1-43E9-AE8B-E74F72131403}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4272037-13D1-43E9-AE8B-E74F72131403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A127AD-268E-407A-B550-1E3FF745D838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A127AD-268E-407A-B550-1E3FF745D838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A127AD-268E-407A-B550-1E3FF745D838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A127AD-268E-407A-B550-1E3FF745D838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -134,5 +140,6 @@ Global
 		{768BCD0E-029D-4559-B3F5-A8B1ECF5B3AF} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
 		{3A014DB0-1A89-40CA-B5C5-8D4E59B60A1A} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
 		{B4272037-13D1-43E9-AE8B-E74F72131403} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
+		{12A127AD-268E-407A-B550-1E3FF745D838} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
 	EndGlobalSection
 EndGlobal
