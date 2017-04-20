@@ -63,7 +63,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "DesignPatterns\Creational\Singleton\Singleton.csproj", "{9FD74B1A-0A68-4109-AC0C-FF1D8EFBB7D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{3AF59B4E-CEB8-41AD-9670-8DBF3353F362}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "DesignPatterns\Creational\Factory\Factory.csproj", "{3AF59B4E-CEB8-41AD-9670-8DBF3353F362}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
