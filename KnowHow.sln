@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26228.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{2A8B89A2-C7E3-4A09-B565-3FB8EA4E3370}"
 EndProject
@@ -54,6 +54,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleResponsibilityPrinciple", "SolidDesignPrinciples\SingleResponsibilityPrinciple\SingleResponsibilityPrinciple.csproj", "{12A127AD-268E-407A-B550-1E3FF745D838}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiskovsSubstitutionPrinciple", "SolidDesignPrinciples\LiskovsSubstitutionPrinciple\LiskovsSubstitutionPrinciple.csproj", "{ED43B7C0-02CB-4603-A46C-12D9258E5EF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{5ED61F8C-A0D0-4650-8B46-11614F089FBF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{F6E8F4C4-52D6-4826-AB0B-201D22EDA3C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{50CF2CAF-418A-481D-8A84-98C51DB67618}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "DesignPatterns\Creational\Singleton\Singleton.csproj", "{9FD74B1A-0A68-4109-AC0C-FF1D8EFBB7D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -125,6 +133,10 @@ Global
 		{ED43B7C0-02CB-4603-A46C-12D9258E5EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED43B7C0-02CB-4603-A46C-12D9258E5EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED43B7C0-02CB-4603-A46C-12D9258E5EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FD74B1A-0A68-4109-AC0C-FF1D8EFBB7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD74B1A-0A68-4109-AC0C-FF1D8EFBB7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD74B1A-0A68-4109-AC0C-FF1D8EFBB7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD74B1A-0A68-4109-AC0C-FF1D8EFBB7D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,5 +160,9 @@ Global
 		{B4272037-13D1-43E9-AE8B-E74F72131403} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
 		{12A127AD-268E-407A-B550-1E3FF745D838} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
 		{ED43B7C0-02CB-4603-A46C-12D9258E5EF5} = {7A7516EB-A13C-4B4E-8D36-895AD1832A2C}
+		{5ED61F8C-A0D0-4650-8B46-11614F089FBF} = {D935A75B-0CD5-4202-BA40-E55D6335F3EB}
+		{F6E8F4C4-52D6-4826-AB0B-201D22EDA3C8} = {D935A75B-0CD5-4202-BA40-E55D6335F3EB}
+		{50CF2CAF-418A-481D-8A84-98C51DB67618} = {D935A75B-0CD5-4202-BA40-E55D6335F3EB}
+		{9FD74B1A-0A68-4109-AC0C-FF1D8EFBB7D7} = {5ED61F8C-A0D0-4650-8B46-11614F089FBF}
 	EndGlobalSection
 EndGlobal
