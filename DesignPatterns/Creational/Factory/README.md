@@ -1,6 +1,6 @@
 ﻿### Intent
-Creates objects without exposing the instantiation logic to the client.
-Refers to the newly created objects through a common interface.
+- Creates objects without exposing the instantiation logic to the client.
+- Refers to the newly created objects through a common interface.
 
 Implementation is very simple:
 - The client needs a product, but instead of creating it directly using new operator, just asks to factory object for a new product, providing the information about the type of object it needs
