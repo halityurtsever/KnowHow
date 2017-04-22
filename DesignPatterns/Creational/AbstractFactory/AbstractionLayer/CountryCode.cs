@@ -1,10 +1,9 @@
 ﻿
 namespace DesignPatterns.Creational.AbstractFactory.AbstractionLayer
 {
-    public interface ITruck
+    public enum CountryCode
     {
-        bool Is18Wheels();
-
-        bool IsDumperAttached();
+        TR,
+        D
     }
 }

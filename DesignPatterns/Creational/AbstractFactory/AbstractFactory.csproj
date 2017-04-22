@@ -7,7 +7,7 @@
     <ProjectGuid>{BAB89489-7E68-4F7A-82DC-E17B2BB1DD32}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AbstractFactory</RootNamespace>
+    <RootNamespace>DesignPatterns.Creational.AbstractFactory</RootNamespace>
     <AssemblyName>AbstractFactory</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -40,19 +40,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractionLayer\IBus.cs" />
-    <Compile Include="AbstractionLayer\ICar.cs" />
-    <Compile Include="AbstractionLayer\IProductFactory.cs" />
-    <Compile Include="AbstractionLayer\ITruck.cs" />
+    <Compile Include="AbstractionLayer\CountryCode.cs" />
+    <Compile Include="AbstractionLayer\FactoryProvider.cs" />
+    <Compile Include="AbstractionLayer\IPhoneNumber.cs" />
+    <Compile Include="AbstractionLayer\IAddress.cs" />
+    <Compile Include="AbstractionLayer\ICountryFormatFactory.cs" />
+    <Compile Include="AbstractionLayer\ILicencePlate.cs" />
     <Compile Include="ApplicationLayer\Client.cs" />
-    <Compile Include="BusinessLayer\Bus.cs" />
-    <Compile Include="BusinessLayer\HatchbackCar.cs" />
-    <Compile Include="BusinessLayer\SedanCar.cs" />
-    <Compile Include="BusinessLayer\ProductFactory.cs" />
-    <Compile Include="BusinessLayer\StationVagonCar.cs" />
-    <Compile Include="BusinessLayer\Truck.cs" />
+    <Compile Include="BusinessLayer\TurkeyFormat.cs" />
+    <Compile Include="BusinessLayer\GermanyFormat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

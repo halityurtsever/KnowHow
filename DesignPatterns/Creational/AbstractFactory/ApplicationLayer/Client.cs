@@ -10,10 +10,10 @@ namespace DesignPatterns.Creational.AbstractFactory.ApplicationLayer
         //################################################################################
         #region Fields
 
-        private readonly IProductFactory m_Factory;
-        private readonly ICar m_CarProduct;
-        private readonly IBus m_BusFactory;
-        private readonly ITruck m_TruckFactory;
+        private readonly ICountryFormatFactory m_Factory;
+        private readonly IAddress m_Address;
+        private readonly IPhoneNumber m_PhoneNumber;
+        private readonly ILicencePlate m_LicencePlate;
 
         #endregion
 
@@ -21,16 +21,34 @@ namespace DesignPatterns.Creational.AbstractFactory.ApplicationLayer
 
         #region Constructor
 
-        public Client()
+        public Client(CountryCode countryCode)
         {
-            this.m_Factory = new
+            this.m_Factory = FactoryProvider.CreateFactory(countryCode);
+
+            this.m_Address = this.m_Factory.CreateAddressFormat();
+            this.m_PhoneNumber = this.m_Factory.CreatePhoneNumberFormat();
+            this.m_LicencePlate = this.m_Factory.CreateLicencePlateFormat();
         }
 
         #endregion
 
         //################################################################################
 
+        #region Properties
+
+        internal IAddress Address => this.m_Address;
+
+        internal IPhoneNumber PhoneNumber => this.m_PhoneNumber;
+
+        internal ILicencePlate LicencePlate => this.m_LicencePlate;
+
+        #endregion
+
+        //################################################################################
+
         #region Internal Implementation
+
+        // do something with factory and products
 
         #endregion
     }
