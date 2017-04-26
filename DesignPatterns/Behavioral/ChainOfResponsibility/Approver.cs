@@ -13,10 +13,15 @@
 
         #endregion
 
+        //################################################################################
+        #region Constructor
+
         protected Approver(string name)
         {
             this.m_Name = name;
         }
+
+        #endregion
 
         //################################################################################
         #region Properties
