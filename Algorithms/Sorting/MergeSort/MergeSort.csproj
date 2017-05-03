@@ -7,7 +7,7 @@
     <ProjectGuid>{26549363-F304-460E-94FF-3E3BB7D1E6AE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MergeSort</RootNamespace>
+    <RootNamespace>Algorithms.Sorting.MergeSort</RootNamespace>
     <AssemblyName>MergeSort</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -48,6 +48,9 @@
       <Project>{006a2099-c988-4dc5-93a0-e46db18c5772}</Project>
       <Name>CodeHelpers</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
