@@ -9,10 +9,8 @@ namespace DesignPatterns.Behavioral.Visitor.Visitors
     /// </summary>
     internal class IncomeVisitor : IVisitor
     {
-        void IVisitor.Visit(Element element)
+        void IVisitor.Visit(Employee employee)
         {
-            Employee employee = element as Employee;
-
             //Provide 10% pay raise
             if (employee != null)
             {

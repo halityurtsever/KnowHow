@@ -3,7 +3,7 @@ using DesignPatterns.Behavioral.Visitor.Visitors;
 
 namespace DesignPatterns.Behavioral.Visitor.Elements
 {
-    internal class Employee : Element
+    internal class Employee
     {
         //################################################################################
         #region Fields
@@ -17,7 +17,7 @@ namespace DesignPatterns.Behavioral.Visitor.Elements
         //################################################################################
         #region Constructor
 
-        public Employee(string name, double income, int vacationDays)
+        protected Employee(string name, double income, int vacationDays)
         {
             m_Name = name;
             m_Income = income;
@@ -73,7 +73,7 @@ namespace DesignPatterns.Behavioral.Visitor.Elements
         //################################################################################
         #region Overrides
 
-        public override void Accept(IVisitor visitor)
+        public void Accept(IVisitor visitor)
         {
             visitor.Visit(this);
         }

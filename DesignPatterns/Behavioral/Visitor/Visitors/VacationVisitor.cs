@@ -9,10 +9,8 @@ namespace DesignPatterns.Behavioral.Visitor.Visitors
     /// </summary>
     internal class VacationVisitor : IVisitor
     {
-        void IVisitor.Visit(Element element)
+        void IVisitor.Visit(Employee employee)
         {
-            Employee employee = element as Employee;
-
             if (employee != null)
             {
                 //Provide 3 extra vacation days

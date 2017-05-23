@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="Elements\Clark.cs" />
     <Compile Include="Elements\Director.cs" />
-    <Compile Include="Elements\Element.cs" />
     <Compile Include="Elements\Employee.cs" />
     <Compile Include="Elements\President.cs" />
     <Compile Include="Employees.cs" />

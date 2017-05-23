@@ -8,6 +8,6 @@ namespace DesignPatterns.Behavioral.Visitor.Visitors
     /// </summary>
     internal interface IVisitor
     {
-        void Visit(Element element);
+        void Visit(Employee employee);
     }
 }

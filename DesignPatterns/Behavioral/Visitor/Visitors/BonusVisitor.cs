@@ -6,10 +6,8 @@ namespace DesignPatterns.Behavioral.Visitor.Visitors
 {
     class BonusVisitor : IVisitor
     {
-        void IVisitor.Visit(Element element)
+        void IVisitor.Visit(Employee employee)
         {
-            Employee employee = element as Employee;
-
             if (employee != null)
             {
                 if (employee.VacationDays < 200)
