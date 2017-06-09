@@ -1,11 +1,10 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AsyncAwaitBasic
+namespace Concepts.AsyncAwait_Sample.AsyncAwaitBasic
 {
     internal class Sample
     {

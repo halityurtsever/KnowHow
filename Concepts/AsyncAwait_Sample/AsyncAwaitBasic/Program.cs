@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AsyncAwaitBasic
+namespace Concepts.AsyncAwait_Sample.AsyncAwaitBasic
 {
     class Program
     {

@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3D246C4B-0C92-4384-9340-8D6AD702B6A4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AsyncAwaitBasic</RootNamespace>
+    <RootNamespace>Concepts.AsyncAwait_Sample.AsyncAwaitBasic</RootNamespace>
     <AssemblyName>AsyncAwaitBasic</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
