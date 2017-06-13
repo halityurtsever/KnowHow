@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExtensionLibrary
+namespace Concepts.ExtensionMethod_Sample.ExtensionLibrary
 {
     /// <summary>
     /// This is a public class and must not be changed

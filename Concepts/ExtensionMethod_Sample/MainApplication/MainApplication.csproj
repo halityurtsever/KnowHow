@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5E4B51C8-BB05-4ACC-BD03-07FC3AA2D6FC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MainApplication</RootNamespace>
+    <RootNamespace>Concepts.ExtensionMethod_Sample.MainApplication</RootNamespace>
     <AssemblyName>MainApplication</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

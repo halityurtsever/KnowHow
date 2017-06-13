@@ -1,10 +1,10 @@
 ﻿using System;
 
-using ExtensionLibrary;
+using Concepts.ExtensionMethod_Sample.ExtensionLibrary;
 
-namespace MainApplication
+namespace Concepts.ExtensionMethod_Sample.MainApplication
 {
-    class Program
+    public class Program
     {
         static void Main()
         {

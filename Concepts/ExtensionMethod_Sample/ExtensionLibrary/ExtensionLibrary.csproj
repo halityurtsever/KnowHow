@@ -7,7 +7,7 @@
     <ProjectGuid>{752AF07B-CE19-44A0-9DB2-C6146751E30F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExtensionLibrary</RootNamespace>
+    <RootNamespace>Concepts.ExtensionMethod_Sample.ExtensionLibrary</RootNamespace>
     <AssemblyName>ExtensionLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>

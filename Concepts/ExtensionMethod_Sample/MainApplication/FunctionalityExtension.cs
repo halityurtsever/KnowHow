@@ -1,8 +1,8 @@
 ﻿using System;
 
-using ExtensionLibrary;
+using Concepts.ExtensionMethod_Sample.ExtensionLibrary;
 
-namespace MainApplication
+namespace Concepts.ExtensionMethod_Sample.MainApplication
 {
     internal static class FunctionalityExtension
     {
