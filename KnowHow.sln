@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{2A8B89A2-C7E3-4A09-B565-3FB8EA4E3370}"
 EndProject
@@ -110,6 +110,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceConditionWithSolution", "Concepts\AsyncAwait_Sample\RaceConditionWithSolution\RaceConditionWithSolution.csproj", "{0B893149-9C15-45D4-9E01-F500F09112AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "DesignPatterns\Structural\Adapter\Adapter.csproj", "{0A8CB6AC-FABA-4CA0-9939-4F6CCA3D7755}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "DesignPatterns\Structural\Bridge\Bridge.csproj", "{F7CDF73A-1C6F-4AD2-A5AF-100AA104C5FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -261,6 +263,10 @@ Global
 		{0A8CB6AC-FABA-4CA0-9939-4F6CCA3D7755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A8CB6AC-FABA-4CA0-9939-4F6CCA3D7755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A8CB6AC-FABA-4CA0-9939-4F6CCA3D7755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7CDF73A-1C6F-4AD2-A5AF-100AA104C5FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7CDF73A-1C6F-4AD2-A5AF-100AA104C5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7CDF73A-1C6F-4AD2-A5AF-100AA104C5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7CDF73A-1C6F-4AD2-A5AF-100AA104C5FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -312,5 +318,6 @@ Global
 		{B25417A3-4870-4D7C-ADA7-0B3A8E3922A7} = {89C695DE-99DA-4AC4-8E24-AE266120E145}
 		{0B893149-9C15-45D4-9E01-F500F09112AA} = {420C5DAC-391B-44E8-979E-D6B10518A9C8}
 		{0A8CB6AC-FABA-4CA0-9939-4F6CCA3D7755} = {50CF2CAF-418A-481D-8A84-98C51DB67618}
+		{F7CDF73A-1C6F-4AD2-A5AF-100AA104C5FD} = {50CF2CAF-418A-481D-8A84-98C51DB67618}
 	EndGlobalSection
 EndGlobal
