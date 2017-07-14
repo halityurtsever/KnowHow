@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DCECA6F9-834A-4FF9-AA05-7577DD0E98D8}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DesignPatterns.Creational.Builder</RootNamespace>
+    <ProjectGuid>{581B13FF-9F38-400A-88F1-8CBD09A6FAEA}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DesignPatterns.Structural.Creational</RootNamespace>
     <AssemblyName>Builder</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,16 +42,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Client.cs" />
-    <Compile Include="IBuilder.cs" />
+    <Compile Include="Builders\BurgerBuilder.cs" />
+    <Compile Include="Builders\DefaultBurgerBuilder.cs" />
+    <Compile Include="Builders\VeganBurgerBuilder.cs" />
+    <Compile Include="BurgerMaker.cs" />
+    <Compile Include="Enums\BreadType.cs" />
+    <Compile Include="Enums\CheeseType.cs" />
+    <Compile Include="Enums\MeatType.cs" />
+    <Compile Include="Burger.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VacationBuilder.cs" />
-    <Compile Include="VacationDay.cs" />
-    <Compile Include="VacationPlanner.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="README.md" />
+    <None Include="App.config" />
+    <None Include="Builder.Pattern.vsdx" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
