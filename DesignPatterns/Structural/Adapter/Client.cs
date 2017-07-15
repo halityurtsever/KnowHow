@@ -11,7 +11,7 @@ namespace DesignPatterns.Structural.Adapter
             m_Adapter = adapter;
         }
 
-        internal List<string> GetNameList()
+        internal List<string> GetNamesOverAdapter()
         {
             return m_Adapter.GetNameList();
         }

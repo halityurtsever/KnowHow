@@ -50,6 +50,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Adapter.Pattern.Forms.vsdx" />
+    <None Include="Adapter.Pattern.Problem.vsdx" />
+    <None Include="Adapter.Pattern.vsdx" />
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
