@@ -1,33 +1,29 @@
 ﻿
-namespace DesignPatterns.Behavioral.ChainOfResponsibility
+namespace DesignPatterns.Behavioral.ChainOfResponsibility.SimpleExample.Reports
 {
-    internal class Purchase
+    internal class ExpenseReport : IExpenseReport
     {
         //################################################################################
         #region Fields
 
-        private readonly int m_Amount;
-        private readonly double m_Price;
+        private readonly decimal m_Total;
 
         #endregion
 
         //################################################################################
         #region Constructor
 
-        public Purchase(int amount, double price)
+        public ExpenseReport(decimal total)
         {
-            this.m_Amount = amount;
-            this.m_Price = price;
+            m_Total = total;
         }
 
         #endregion
 
         //################################################################################
-        #region Properties
+        #region IExpenseReport Implementation
 
-        internal int Amount => this.m_Amount;
-
-        internal double Price => this.m_Price;
+        decimal IExpenseReport.Total => m_Total;
 
         #endregion
     }

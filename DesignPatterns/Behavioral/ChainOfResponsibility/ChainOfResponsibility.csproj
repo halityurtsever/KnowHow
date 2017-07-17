@@ -42,16 +42,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Approver.cs" />
-    <Compile Include="Director.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProjectManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Purchase.cs" />
-    <Compile Include="UnitManager.cs" />
+    <Compile Include="SimpleExample\ApprovalResponse.cs" />
+    <Compile Include="SimpleExample\ConsoleInput.cs" />
+    <Compile Include="SimpleExample\Approvers\Employee.cs" />
+    <Compile Include="SimpleExample\Approvers\IExpenseApprover.cs" />
+    <Compile Include="SimpleExample\Handlers\EndOfChainExpenseHandler.cs" />
+    <Compile Include="SimpleExample\Handlers\ExpenseHandler.cs" />
+    <Compile Include="SimpleExample\Handlers\IExpenseHandler.cs" />
+    <Compile Include="SimpleExample\Reports\ExpenseReport.cs" />
+    <Compile Include="SimpleExample\Reports\IExpenseReport.cs" />
+    <Compile Include="SimpleExample\SimpleExampleImplementation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Chain.of.Responsibility.vsdx" />
+    <None Include="SimpleExample\Chain.of.Responsibility_Simple.Example.vsdx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PokerExample\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
