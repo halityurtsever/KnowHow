@@ -42,6 +42,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PokerExample\Card.cs" />
+    <Compile Include="PokerExample\Deck.cs" />
+    <Compile Include="PokerExample\Enums\Rank.cs" />
+    <Compile Include="PokerExample\Enums\Suit.cs" />
+    <Compile Include="PokerExample\Enums\Value.cs" />
+    <Compile Include="PokerExample\Evaluators\FlushEvaluator.cs" />
+    <Compile Include="PokerExample\Evaluators\FourOfAKindEvaluator.cs" />
+    <Compile Include="PokerExample\Evaluators\FullHouseEvaluator.cs" />
+    <Compile Include="PokerExample\Evaluators\RankEvaluator.cs" />
+    <Compile Include="PokerExample\Evaluators\OnePairEvaluator.cs" />
+    <Compile Include="PokerExample\Evaluators\RoyalFlushEvaluator.cs" />
+    <Compile Include="PokerExample\Evaluators\StraightEvaluator.cs" />
+    <Compile Include="PokerExample\Evaluators\StraightFlushEvaluator.cs" />
+    <Compile Include="PokerExample\Evaluators\ThreeOfAKindEvaluator.cs" />
+    <Compile Include="PokerExample\Evaluators\TwoPairsEvaluator.cs" />
+    <Compile Include="PokerExample\Game.cs" />
+    <Compile Include="PokerExample\Hand.cs" />
+    <Compile Include="PokerExample\Handlers\EndOfChainHandler.cs" />
+    <Compile Include="PokerExample\Handlers\HandRankHandler.cs" />
+    <Compile Include="PokerExample\Handlers\IHandRankHandler.cs" />
+    <Compile Include="PokerExample\PokerExampleImplementation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleExample\ApprovalResponse.cs" />
@@ -58,10 +79,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Chain.of.Responsibility.vsdx" />
+    <None Include="PokerExample\Chain.of.Responsibility_Poker.Example.vsdx" />
     <None Include="SimpleExample\Chain.of.Responsibility_Simple.Example.vsdx" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="PokerExample\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
