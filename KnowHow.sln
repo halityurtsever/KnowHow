@@ -131,6 +131,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLibrary", "Concepts\T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonteCarloSimulation", "Concepts\Task_Sample\GUI_Example_Async\MonteCarloSimulation\MonteCarloSimulation.csproj", "{3E5DF95A-4532-4173-BBC1-A2A8D9FB6593}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyExchangeService", "Concepts\Task_Sample\Console_Example_Seq\CurrencyExchangeService\CurrencyExchangeService.csproj", "{D446F9D2-2004-4780-8D35-194D680CF914}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -301,6 +303,10 @@ Global
 		{3E5DF95A-4532-4173-BBC1-A2A8D9FB6593}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E5DF95A-4532-4173-BBC1-A2A8D9FB6593}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E5DF95A-4532-4173-BBC1-A2A8D9FB6593}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D446F9D2-2004-4780-8D35-194D680CF914}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D446F9D2-2004-4780-8D35-194D680CF914}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D446F9D2-2004-4780-8D35-194D680CF914}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D446F9D2-2004-4780-8D35-194D680CF914}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -362,5 +368,6 @@ Global
 		{6ADD507B-6AB0-4312-BF6B-8C31E0CE01EA} = {92C0BD17-97F4-4C4A-8F68-0CC9A22E15A9}
 		{762ABC15-394E-4D38-89C7-1F6166F9D141} = {2B8D6069-C871-4E99-A003-14E299770E79}
 		{3E5DF95A-4532-4173-BBC1-A2A8D9FB6593} = {E348B5D6-03D4-44FA-AED4-648AA0613C3F}
+		{D446F9D2-2004-4780-8D35-194D680CF914} = {A3554F72-D59E-4010-A23D-8A4616941F72}
 	EndGlobalSection
 EndGlobal
