@@ -1,6 +1,7 @@
 ﻿using System;
 
-using DesignPatterns.Behavioral.Visitor.Elements;
+using DesignPatterns.Behavioral.Visitor.Employee.Interfaces;
+using DesignPatterns.Behavioral.Visitor.Visitors.Interfaces;
 
 namespace DesignPatterns.Behavioral.Visitor.Visitors
 {
@@ -9,7 +10,7 @@ namespace DesignPatterns.Behavioral.Visitor.Visitors
     /// </summary>
     internal class IncomeVisitor : IVisitor
     {
-        void IVisitor.Visit(Employee employee)
+        void IVisitor.Visit(IEmployee employee)
         {
             //Provide 10% pay raise
             if (employee != null)

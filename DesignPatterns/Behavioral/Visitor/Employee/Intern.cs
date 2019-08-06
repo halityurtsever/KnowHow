@@ -1,9 +1,11 @@
 ﻿
+using DesignPatterns.Behavioral.Visitor.Employee.Interfaces;
 using DesignPatterns.Behavioral.Visitor.Visitors;
+using DesignPatterns.Behavioral.Visitor.Visitors.Interfaces;
 
-namespace DesignPatterns.Behavioral.Visitor.Elements
+namespace DesignPatterns.Behavioral.Visitor.Employee
 {
-    internal class Employee
+    internal class Intern : IEmployee
     {
         //################################################################################
         #region Fields
@@ -17,7 +19,7 @@ namespace DesignPatterns.Behavioral.Visitor.Elements
         //################################################################################
         #region Constructor
 
-        protected Employee(string name, double income, int vacationDays)
+        public Intern(string name, double income, int vacationDays)
         {
             m_Name = name;
             m_Income = income;
@@ -27,44 +29,28 @@ namespace DesignPatterns.Behavioral.Visitor.Elements
         #endregion
 
         //################################################################################
-        #region Properties
+        #region IEmployee Implementation
 
-        public string Name
+        string IEmployee.Name { get => m_Name; }
+
+        double IEmployee.Income
         {
-            get
-            {
-                return m_Name;
-            }
-
-            set
-            {
-                m_Name = value;
-            }
+            get => m_Income;
+            set => m_Income = value;
         }
 
-        public double Income
+        int IEmployee.VacationDays
         {
-            get
-            {
-                return m_Income;
-            }
-
-            set
-            {
-                m_Income = value;
-            }
+            get => m_VacationDays;
+            set => m_VacationDays = value;
         }
 
-        public int VacationDays
+        void IEmployee.Accept(IVisitor visitor)
         {
-            get
+            if (visitor is IncomeVisitor ||
+                visitor is PrintVisitor)
             {
-                return m_VacationDays;
-            }
-
-            set
-            {
-                m_VacationDays = value;
+                visitor.Visit(this); 
             }
         }
 
@@ -73,9 +59,9 @@ namespace DesignPatterns.Behavioral.Visitor.Elements
         //################################################################################
         #region Overrides
 
-        public void Accept(IVisitor visitor)
+        public override string ToString()
         {
-            visitor.Visit(this);
+            return "Intern";
         }
 
         #endregion
