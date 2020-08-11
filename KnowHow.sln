@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.15
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Algorithms", "Algorithms", "{2A8B89A2-C7E3-4A09-B565-3FB8EA4E3370}"
 EndProject
@@ -148,6 +148,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CascadeDisposeCalls", "Concepts\GarbageCollector\IDisposable\CascadeDisposeCalls\CascadeDisposeCalls.csproj", "{A747F6DA-2AD2-4BD8-B8DA-E5693CA129D5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringComparisons", "Concepts\EqualityComparisons\StringComparisons\StringComparisons.csproj", "{24783153-EF68-4BFB-8F0E-D6B5EB3EC7A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IComparerExample", "Concepts\EqualityComparisons\IComparerExample\IComparerExample.csproj", "{4B294220-1079-41CC-99AA-2D3A8B6379DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEqualityComparerExample", "Concepts\EqualityComparisons\IEqualityComparerExample\IEqualityComparerExample.csproj", "{3D4B3F14-8E55-4476-91B3-E08BE34EB797}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBasicsV2", "Concepts\Event_Sample\EventBasicsV2\EventBasicsV2.csproj", "{9DD03581-A7E6-4329-A80B-7B554EE51454}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mutex_Semaphore", "Mutex_Semaphore", "{D6755F8D-3660-460F-86F8-29C58705DD99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MutexSample", "Concepts\Mutex_Semaphore\MutexSample\MutexSample.csproj", "{E8A74DCB-6477-4DF2-8097-9F4A43ECBACC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -339,6 +349,22 @@ Global
 		{24783153-EF68-4BFB-8F0E-D6B5EB3EC7A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{24783153-EF68-4BFB-8F0E-D6B5EB3EC7A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{24783153-EF68-4BFB-8F0E-D6B5EB3EC7A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B294220-1079-41CC-99AA-2D3A8B6379DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B294220-1079-41CC-99AA-2D3A8B6379DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B294220-1079-41CC-99AA-2D3A8B6379DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B294220-1079-41CC-99AA-2D3A8B6379DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4B3F14-8E55-4476-91B3-E08BE34EB797}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4B3F14-8E55-4476-91B3-E08BE34EB797}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4B3F14-8E55-4476-91B3-E08BE34EB797}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4B3F14-8E55-4476-91B3-E08BE34EB797}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD03581-A7E6-4329-A80B-7B554EE51454}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD03581-A7E6-4329-A80B-7B554EE51454}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD03581-A7E6-4329-A80B-7B554EE51454}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD03581-A7E6-4329-A80B-7B554EE51454}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8A74DCB-6477-4DF2-8097-9F4A43ECBACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8A74DCB-6477-4DF2-8097-9F4A43ECBACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8A74DCB-6477-4DF2-8097-9F4A43ECBACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8A74DCB-6477-4DF2-8097-9F4A43ECBACC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -409,6 +435,11 @@ Global
 		{694233A4-2A8F-4CCB-865D-3591AC7AD60A} = {05F1CE8D-A99E-466F-B898-FC958F7F8EBC}
 		{A747F6DA-2AD2-4BD8-B8DA-E5693CA129D5} = {694233A4-2A8F-4CCB-865D-3591AC7AD60A}
 		{24783153-EF68-4BFB-8F0E-D6B5EB3EC7A6} = {DF5CD19E-B4CB-4F8F-9126-322D78534703}
+		{4B294220-1079-41CC-99AA-2D3A8B6379DD} = {DF5CD19E-B4CB-4F8F-9126-322D78534703}
+		{3D4B3F14-8E55-4476-91B3-E08BE34EB797} = {DF5CD19E-B4CB-4F8F-9126-322D78534703}
+		{9DD03581-A7E6-4329-A80B-7B554EE51454} = {97FEB0A8-4193-4DB2-9587-A41BCE958209}
+		{D6755F8D-3660-460F-86F8-29C58705DD99} = {CA32150C-C764-4C59-9DE1-7F92B9E90CD1}
+		{E8A74DCB-6477-4DF2-8097-9F4A43ECBACC} = {D6755F8D-3660-460F-86F8-29C58705DD99}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {167B4AE5-7519-4A19-B5C5-9D5824F075EC}
